@@ -6,15 +6,15 @@
 </head>
 
 <body>
-  <ul>
-    <form>
-      <input type="text" value="{{ query }}" name="q" />
-      <button type="submit">Search</button>
-    </form>
+  <form>
+    <input type="text" value="{{ query }}" name="q" />
+    <button type="submit">Search</button>
+  </form>
+  <ol>
     {% for result in results %}
-    <li>{{ result["index"] }}) {{ result["track_name"] }}</li>
+    <li>{{ result["index"] }} {{ result["track_name"] }}</li>
     {% endfor %}
-  </ul>
+  </ol>
 </body>
 
 </html>
