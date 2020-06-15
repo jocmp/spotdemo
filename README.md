@@ -15,6 +15,6 @@ to your environment.
     export FLASK_APP=main.py
   
 
-Finally, `pipenv run flask run` and navigate to http://127.0.0.1:5000
+Finally, `make run` and navigate to http://127.0.0.1:5000
 
 ![demo.png](./demo.png)
