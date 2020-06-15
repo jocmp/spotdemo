@@ -7,6 +7,10 @@
 
 <body>
   <ul>
+    <form>
+      <input type="text" value="{{ query }}" name="q" />
+      <button type="submit">Search</button>
+    </form>
     {% for result in results %}
     <li>{{ result["index"] }}) {{ result["track_name"] }}</li>
     {% endfor %}
