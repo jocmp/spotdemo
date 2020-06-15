@@ -3,18 +3,28 @@
 
 <head>
   <title>Spot Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    main {
+      max-width: 38rem;
+      padding: 2rem;
+      margin: auto;
+    }
+  </style>
 </head>
 
 <body>
-  <form>
-    <input type="text" value="{{ query }}" name="q" />
-    <button type="submit">Search</button>
-  </form>
-  <ol>
-    {% for result in results %}
-    <li>{{ result["index"] }} {{ result["track_name"] }}</li>
-    {% endfor %}
-  </ol>
+  <main>
+    <form>
+      <input type="text" value="{{ query }}" name="q" />
+      <button type="submit">Search</button>
+    </form>
+    <ol>
+      {% for result in results %}
+      <li>{{ result["index"] }} {{ result["track_name"] }}</li>
+      {% endfor %}
+    </ol>
+  </main>
 </body>
 
 </html>
